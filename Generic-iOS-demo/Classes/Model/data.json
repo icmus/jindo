@@ -1,0 +1,187 @@
+{
+    "buttons": [
+        {
+            "backgroundAssetPath": "assetPath.png",
+            "height": "60",
+            "id": "type2",
+            "width": "320"
+        },
+        {
+            "backgroundAssetPath": "assetPath.png",
+            "height": "60",
+            "id": "type3",
+            "width": "60"
+        },
+        {
+            "backgroundAssetPath": "assetPath.png",
+            "height": "6400",
+            "id": "fullscreen",
+            "width": "320"
+        },
+        {
+            "backgroundAssetPath": "assetPath.png",
+            "height": "120",
+            "id": "sqMed",
+            "width": "120"
+        },
+        {
+            "backgroundAssetPath": "assetPath.png",
+            "height": "310",
+            "id": "sqLrg",
+            "width": "320"
+        }
+    ],
+    "config": {
+        "assetPath": "",
+        "defaultColor": "",
+        "videoPath": ""
+    },
+    "global": {
+        "nav": []
+    },
+    "sections": [
+        {
+            "backgroundAssetPath": "",
+            "buttons": [
+                {
+                    "target": "section1",
+                    "type": "fullscreen",
+                    "xpos": "0",
+                    "ypos": "0"
+                }
+            ],
+            "id": "sectionQ",
+            "inNav": 1,
+            "label": "QR Code Scanner",
+            "oncomplete": "section1",
+            "type": "qrscanner"
+        },
+        {
+            "backgroundAssetPath": "img1.png",
+            "buttons": [
+                {
+                    "target": "globalnav",
+                    "type": "type2",
+                    "xpos": "0",
+                    "ypos": "0"
+                },
+                {
+                    "target": "section2",
+                    "type": "fullscreen",
+                    "xpos": "0",
+                    "ypos": "70"
+                }
+            ],
+            "id": "section1",
+            "inNav": 1,
+            "label": "Beginning",
+            "type": "section"
+        },
+        {
+            "backgroundAssetPath": "img2.png",
+            "buttons": [
+                {
+                    "target": "globalnav",
+                    "type": "type2",
+                    "xpos": "0",
+                    "ypos": "0"
+                },
+                {
+                    "target": "section3",
+                    "type": "fullscreen",
+                    "xpos": "0",
+                    "ypos": "70"
+                }
+            ],
+            "custom": {},
+            "id": "section2",
+            "inNav": 1,
+            "label": "Section 2",
+            "type": "section"
+        },
+        {
+            "backgroundAssetPath": "img3.png",
+            "buttons": [
+                {
+                    "target": "globalnav",
+                    "type": "type2",
+                    "xpos": "0",
+                    "ypos": "0"
+                },
+                {
+                    "target": "section1",
+                    "type": "type2",
+                    "xpos": "0",
+                    "ypos": "420"
+                },
+                {
+                    "target": "section1",
+                    "type": "type3",
+                    "xpos": "40",
+                    "ypos": "160"
+                },
+                {
+                    "target": "section1",
+                    "type": "type3",
+                    "xpos": "140",
+                    "ypos": "160"
+                }
+            ],
+            "id": "section3",
+            "inNav": 1,
+            "label": "Section 3",
+            "type": "section"
+        },
+        {
+            "backgroundAssetPath": "",
+            "buttons": [],
+            "id": "section4",
+            "inNav": 1,
+            "label": "Section 4",
+            "oncomplete": "section4b",
+            "type": "video",
+            "video": "vid1"
+        },
+        {
+            "backgroundAssetPath": "img1.png",
+            "buttons": [
+                {
+                    "target": "globalnav",
+                    "type": "type2",
+                    "xpos": "0",
+                    "ypos": "0"
+                },
+                {
+                    "target": "section1",
+                    "type": "fullscreen",
+                    "xpos": "0",
+                    "ypos": "70"
+                }
+            ],
+            "id": "section4b",
+            "inNav": 0,
+            "type": "section",
+            "video": "vid1"
+        },
+        {
+            "id": "globalnav",
+            "inNav": 0,
+            "type": "globalnav"
+        }
+    ],
+    "sequences": [],
+    "videos": [
+        {
+            "hascontrols": "true",
+            "id": "vid1",
+            "orientation": "landscape",
+            "uri": "grasser"
+        },
+        {
+            "hascontrols": "false",
+            "id": "packtivation",
+            "orientation": "portrait",
+            "uri": "packtivation_sample_render_130516"
+        }
+    ]
+}
